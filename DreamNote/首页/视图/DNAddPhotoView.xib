@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DNAddPhotoView" customModule="DreamNote" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="测试1" id="zjO-2v-SCy">
+                    <rect key="frame" x="24" y="19" width="75" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="测试4" id="6Mx-y9-ouP">
+                    <rect key="frame" x="24" y="116" width="75" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="测试5" id="eI1-du-8gc">
+                    <rect key="frame" x="123" y="116" width="75" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="测试2" id="ROu-rz-frj">
+                    <rect key="frame" x="123" y="19" width="75" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="测试3" id="zii-a2-Dbu">
+                    <rect key="frame" x="221" y="19" width="75" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="测试1" id="9eS-lv-DVP">
+                    <rect key="frame" x="221" y="116" width="75" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ig6-Ro-R38">
+                    <rect key="frame" x="24" y="19" width="75" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="图片添加">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addphotoAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ruz-qB-J1R"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addButton" destination="Ig6-Ro-R38" id="8y8-Ah-1CN"/>
+                <outletCollection property="imageViewArry" destination="zjO-2v-SCy" collectionClass="NSMutableArray" id="Vr2-sx-jco"/>
+                <outletCollection property="imageViewArry" destination="ROu-rz-frj" collectionClass="NSMutableArray" id="ecP-OW-DIG"/>
+                <outletCollection property="imageViewArry" destination="zii-a2-Dbu" collectionClass="NSMutableArray" id="3nH-Q4-4rO"/>
+                <outletCollection property="imageViewArry" destination="6Mx-y9-ouP" collectionClass="NSMutableArray" id="2vt-Gk-7NT"/>
+                <outletCollection property="imageViewArry" destination="eI1-du-8gc" collectionClass="NSMutableArray" id="GAS-yS-JYz"/>
+                <outletCollection property="imageViewArry" destination="9eS-lv-DVP" collectionClass="NSMutableArray" id="TxH-Jc-r8f"/>
+            </connections>
+            <point key="canvasLocation" x="424" y="270"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="图片添加" width="112" height="112"/>
+        <image name="测试1" width="75" height="75"/>
+        <image name="测试2" width="75" height="75"/>
+        <image name="测试3" width="75" height="75"/>
+        <image name="测试4" width="75" height="75"/>
+        <image name="测试5" width="75" height="75"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DNRecordView" customModule="DreamNote" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmg-xh-81w">
+                    <rect key="frame" x="110" y="42" width="101" height="126"/>
+                    <state key="normal" image="按住开始录音">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="松开停止录制"/>
+                    <state key="highlighted" image="松开停止录制"/>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPX-lh-b6E">
+                    <rect key="frame" x="110" y="42" width="101" height="101"/>
+                    <state key="normal" image="播放录音">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="停止录音"/>
+                    <state key="highlighted" image="停止录音"/>
+                    <connections>
+                        <action selector="playAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="IBq-bj-FU1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QL-DH-Geb">
+                    <rect key="frame" x="270" y="161" width="27" height="27"/>
+                    <state key="normal" image="清空">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clearAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="7U2-bF-hyp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="vPX-lh-b6E" secondAttribute="centerX" id="6Yo-ja-fS1"/>
+                <constraint firstAttribute="centerX" secondItem="Zmg-xh-81w" secondAttribute="centerX" id="Qfy-wZ-EL9"/>
+                <constraint firstAttribute="trailing" secondItem="6QL-DH-Geb" secondAttribute="trailing" constant="23" id="awx-Kn-GeQ"/>
+                <constraint firstAttribute="centerY" secondItem="vPX-lh-b6E" secondAttribute="centerY" constant="12.5" id="fcf-lY-RIw"/>
+                <constraint firstAttribute="centerY" secondItem="Zmg-xh-81w" secondAttribute="centerY" id="tiS-Kb-kP3"/>
+                <constraint firstAttribute="bottom" secondItem="6QL-DH-Geb" secondAttribute="bottom" constant="22" id="xjN-y9-De9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="playButton" destination="vPX-lh-b6E" id="101-tC-rmk"/>
+                <outlet property="recordButton" destination="Zmg-xh-81w" id="3dt-GQ-Sbo"/>
+            </connections>
+            <point key="canvasLocation" x="161" y="241"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="停止录音" width="101" height="101"/>
+        <image name="按住开始录音" width="101" height="126"/>
+        <image name="播放录音" width="101" height="101"/>
+        <image name="松开停止录制" width="101" height="126"/>
+        <image name="清空" width="27" height="27"/>
+    </resources>
+</document>
