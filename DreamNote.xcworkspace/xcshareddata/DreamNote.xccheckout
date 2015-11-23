@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2699BF4E-F347-4BFD-93A7-64E0A217C544</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DreamNote</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>77C241997331C106063039E799BE992B851C6D07</key>
+		<string>https://github.com/DebugAlvin/DreamNote.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DreamNote.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>77C241997331C106063039E799BE992B851C6D07</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/DebugAlvin/DreamNote.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>77C241997331C106063039E799BE992B851C6D07</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>77C241997331C106063039E799BE992B851C6D07</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DreamNote</string>
+		</dict>
+	</array>
+</dict>
+</plist>
