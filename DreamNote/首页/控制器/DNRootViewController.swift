@@ -137,7 +137,8 @@ class DNRootViewController: UIViewController,UITableViewDelegate,UITableViewData
         // Do any additional setup after loading the view, typically from a nib.
    
         //需要接收通知的类都要先注册一下
-        NSThread.sleepForTimeInterval(3.0)//延长2秒，这么漂亮的启动图片应该多看一些吧＝ ＝
+        NSThread.sleepForTimeInterval(3.0)//延长3秒，这么漂亮的启动图片应该多看一些吧＝ ＝
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("playAlarm:"), name: "audioClass", object: nil)
 
     }

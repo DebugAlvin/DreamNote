@@ -17,7 +17,7 @@ class DNLocalNotification: NSObject {
         
         let notification = UILocalNotification()
         
-        let inputFormatter = NSDateFormatter()
+        var inputFormatter = NSDateFormatter()
         inputFormatter.locale = NSLocale.currentLocale()
         println(NSLocale.currentLocale().localeIdentifier)
         
@@ -30,7 +30,7 @@ class DNLocalNotification: NSObject {
         let currentWeek = NSNumber(unsignedInteger: comps.weekday)
         
         if alarm.cycle.count > 0 {
-            var dfDay = 0
+            var dfDay:Int = 0
             for weekday in alarm.cycle {
                 if weekday.integerValue <= currentWeek.integerValue {
                     if weekday.integerValue == currentWeek.integerValue {
@@ -47,14 +47,15 @@ class DNLocalNotification: NSObject {
                 }
                 
 
-                var alarmDay = comps.day + dfDay
+                
+                //var alarmDay = comps.day + dfDay
                 
                 inputFormatter.dateFormat = "yyyyMMddHHmm"
-                let inputDate = inputFormatter.dateFromString("\(comps.year)\(comps.month)\(alarmDay)\(alarm.hours)\(alarm.minute)")
+                var inputDate = inputFormatter.dateFromString("\(comps.year)\(comps.month)\(comps.day)\(alarm.hours)\(alarm.minute)")
                 
                 println(inputDate)
 
-                
+                inputDate = inputDate! + dfDay.days
                 
                 for var index = 0; index < 3; ++index {
                 
@@ -99,7 +100,9 @@ class DNLocalNotification: NSObject {
             
             var alarmDay = comps.day + dfDay
             inputFormatter.dateFormat = "yyyyMMddHHmm"
-            let inputDate = inputFormatter.dateFromString("\(comps.year)\(comps.month)\(alarmDay)\(alarm.hours)\(alarm.minute)")
+            var inputDate = inputFormatter.dateFromString("\(comps.year)\(comps.month)\(alarmDay)\(alarm.hours)\(alarm.minute)")
+            
+            inputDate = inputDate! + dfDay.days
             
             println(inputDate)
             notification.fireDate = inputDate

@@ -100,6 +100,7 @@
 		195CD46B1BF1E90400394BDA /* DNSelectRingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195CD46A1BF1E90400394BDA /* DNSelectRingViewController.swift */; };
 		195CD46D1BF1E96300394BDA /* DNSelectRingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195CD46C1BF1E96300394BDA /* DNSelectRingViewCell.swift */; };
 		195CD48A1BF1EE3300394BDA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195CD4891BF1EE3300394BDA /* AVFoundation.framework */; };
+		19E5CA961C04BAA000FDDA58 /* AFDateSwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E5CA951C04BAA000FDDA58 /* AFDateSwiftExtension.swift */; };
 		19ED8BB61BFB2F7D00130D66 /* DNDreamFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED8BB51BFB2F7D00130D66 /* DNDreamFoodView.swift */; };
 		19ED8BB81BFB2F8500130D66 /* DNDreamFoodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19ED8BB71BFB2F8500130D66 /* DNDreamFoodView.xib */; };
 		30526B2291CB2A3DE7F3F68C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABD4DD7654D83B977FF0970 /* libPods.a */; };
@@ -250,6 +251,7 @@
 		195CD46C1BF1E96300394BDA /* DNSelectRingViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSelectRingViewCell.swift; sourceTree = "<group>"; };
 		195CD4871BF1EE2A00394BDA /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		195CD4891BF1EE3300394BDA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		19E5CA951C04BAA000FDDA58 /* AFDateSwiftExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFDateSwiftExtension.swift; sourceTree = "<group>"; };
 		19ED8BB51BFB2F7D00130D66 /* DNDreamFoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNDreamFoodView.swift; sourceTree = "<group>"; };
 		19ED8BB71BFB2F8500130D66 /* DNDreamFoodView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNDreamFoodView.xib; sourceTree = "<group>"; };
 		215D8928705E87F386611422 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 		195817CA1BE65B4F00EAF8DF /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				19E5CA951C04BAA000FDDA58 /* AFDateSwiftExtension.swift */,
 				19435DDA1BFBF13E005033EA /* SCLAlertView */,
 				194756EC1BFA252A009E89B6 /* LKDBHelper */,
 				1952560C1BF35E7600A61455 /* QBImagePickerController */,
@@ -779,6 +782,7 @@
 				195CD43D1BF1B1F000394BDA /* DNTimeRingCell.swift in Sources */,
 				195256261BF35E7600A61455 /* QBImagePickerGroupCell.m in Sources */,
 				195CD4621BF1D6CA00394BDA /* TYAlertFadeAnimation.m in Sources */,
+				19E5CA961C04BAA000FDDA58 /* AFDateSwiftExtension.swift in Sources */,
 				1952562D1BF374E100A61455 /* DNVoice.swift in Sources */,
 				1927F1A11BF334B60036FDE4 /* DNAddDreamViewController.swift in Sources */,
 				19ED8BB61BFB2F7D00130D66 /* DNDreamFoodView.swift in Sources */,
