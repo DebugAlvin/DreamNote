@@ -55,27 +55,27 @@ class DNLocalNotification: NSObject {
                 
                 println(inputDate)
 
-                inputDate = inputDate! + dfDay.days
+                
                 
                 for var index = 0; index < 3; ++index {
-                
-                    
-                
                 }
-                
-                notification.fireDate = inputDate
-                notification.timeZone = NSTimeZone.defaultTimeZone()
-                notification.repeatInterval = NSCalendarUnit.CalendarUnitWeekday
-                notification.soundName = "\(alarm.ringName).wav"
-                notification.alertBody = alarm.tips
-                // NSDictionary *infoDic = [NSDictionary dictionaryWithObject:@"name" forKey:@"key"];
-                
-                let infoDic = NSDictionary(object: alarm.mj_JSONString(), forKey: "key")
-                
-                notification.userInfo = infoDic as [NSObject : AnyObject]
-                
-                //添加推送到uiapplication
-                UIApplication.sharedApplication().scheduleLocalNotification(notification)
+                if inputDate != nil {
+                    inputDate = inputDate! + dfDay.days
+                    notification.fireDate = inputDate
+                    notification.timeZone = NSTimeZone.defaultTimeZone()
+                    
+                    notification.soundName = "\(alarm.ringName).wav"
+                    notification.alertBody = alarm.tips
+                    // NSDictionary *infoDic = [NSDictionary dictionaryWithObject:@"name" forKey:@"key"];
+                    
+                    let infoDic = NSDictionary(object: alarm.mj_JSONString(), forKey: "key")
+                    
+                    notification.userInfo = infoDic as [NSObject : AnyObject]
+                    
+                    //添加推送到uiapplication
+                    UIApplication.sharedApplication().scheduleLocalNotification(notification)
+                }
+
                 
             }
             
@@ -100,25 +100,29 @@ class DNLocalNotification: NSObject {
             
             var alarmDay = comps.day + dfDay
             inputFormatter.dateFormat = "yyyyMMddHHmm"
-            var inputDate = inputFormatter.dateFromString("\(comps.year)\(comps.month)\(alarmDay)\(alarm.hours)\(alarm.minute)")
+            println("\(comps.year)\(comps.month)\(comps.day)\(alarm.hours)\(alarm.minute)")
+            var inputDate = inputFormatter.dateFromString("\(comps.year)\(comps.month)\(comps.day)\(alarm.hours)\(alarm.minute)")
+            if inputDate != nil {
+                inputDate = inputDate! + dfDay.days
+                notification.fireDate = inputDate
+                notification.timeZone = NSTimeZone.defaultTimeZone()
+                
+                notification.soundName = "\(alarm.ringName).wav"
+                notification.alertBody = alarm.tips
+                // NSDictionary *infoDic = [NSDictionary dictionaryWithObject:@"name" forKey:@"key"];
+                
+                let infoDic = NSDictionary(object: alarm.mj_JSONString(), forKey: "key")
+                
+                notification.userInfo = infoDic as [NSObject : AnyObject]
+                
+                //添加推送到uiapplication
+                UIApplication.sharedApplication().scheduleLocalNotification(notification)
+            }
             
-            inputDate = inputDate! + dfDay.days
             
             println(inputDate)
-            notification.fireDate = inputDate
-            notification.timeZone = NSTimeZone.defaultTimeZone()
-
-            notification.soundName = "\(alarm.ringName).wav"
-            notification.alertBody = alarm.tips
-            // NSDictionary *infoDic = [NSDictionary dictionaryWithObject:@"name" forKey:@"key"];
             
-            let infoDic = NSDictionary(object: alarm.mj_JSONString(), forKey: "key")
-            
-            notification.userInfo = infoDic as [NSObject : AnyObject]
-            
-            //添加推送到uiapplication
-            UIApplication.sharedApplication().scheduleLocalNotification(notification)
-
+           
         }
         
         
